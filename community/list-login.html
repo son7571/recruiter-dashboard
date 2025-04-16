@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .my-like-heart {
+            font-size: 24px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .my-like-heart.liked {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">WWY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/community/save-form.html">글쓰기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/update-form">회원정보보기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/community/list.html">로그아웃</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container p-5">
+
+        <div class="mb-3 d-flex justify-content-end">
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="검색...">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h4 class="card-title mb-3">제목3</h4>
+                    <div class="d-flex align-items-start">
+                        <span class="badge bg-secondary">비공개</span>
+                    </div>
+                </div>
+                <a href="/community/detail.html" class="btn btn-primary">상세보기</a>
+            </div>
+        </div>
+
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h4 class="card-title mb-3">제목2</h4>
+                    <div class="d-flex align-items-start">
+                    </div>
+                </div>
+                <a href="/community/detail.html" class="btn btn-primary">상세보기</a>
+            </div>
+        </div>
+
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h4 class="card-title mb-3">제목1</h4>
+                    <div class="d-flex align-items-start">
+                    </div>
+                </div>
+                <a href="/community/detail.html" class="btn btn-primary">상세보기</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <ul class="pagination d-flex justify-content-center">
+            <li class="page-item"><a class="page-link" href="?page={{model.prev}}">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="?page=1">1</a></li>
+        </ul>
+
+    </div>

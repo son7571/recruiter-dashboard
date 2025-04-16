@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>구직자추천</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .callout-box {
+            background-color: #f1f3f5;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .tagfont {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .profile-box {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-button {
+            background: #007bff;
+            color: white;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .toggle {
+            display: inline-block;
+            width: 50px;
+            height: 20px;
+            background: #007bff;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .toggle::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+        }
+
+        .recommend-list {
+            border: 1px solid black;
+            display: grid;
+            gap: 20px;
+            row-gap: 20px;
+            height: 295px;
+        }
+
+        .recommend-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background: white;
+            padding: 20px;
+            gap: 40px;
+            overflow: hidden;
+        }
+
+
+        .recommend-card-box {
+            border-radius: 10px;
+            display: grid;
+            width: 264px;
+            background: white;
+            padding: 5px;
+        }
+
+        .recommend-card-box img {
+            height: 176px;
+            border-radius: 5px;
+        }
+
+        .recommend-card-box-content {
+            padding: 10px;
+        }
+
+        .btn-detail {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 6px 12px;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 제안 안내 -->
+        <div class="card">
+            <div class="title">받은 제안</div>
+            <div class="subtitle">
+                <h4>포지션 제안받기 기능을 활성화하면 기업의 인사담당자가 보내는 포지션 제안을 받을 수 있습니다. 매력적으로 보일 수 있도록 프로필을 자주 업데이트해 주세요.</h4>
+            </div>
+            <div class="callout-box">
+                제안을 수락하면 프로필이 이력서로 제출되니, 프로필을 업데이트하고 수락하세요.
+            </div>
+            </class>
+        </div>
+
+        <!-- 프로필 매칭 -->
+        <div class="card">
+            <div class="profile-box">
+                <div class="profile-info">
+                    <div><strong>프로필: 매칭 중</strong></div>
+                    <div class="subtitle">면접 제안을 받으면 이메일로 제안 메일이 전송됩니다.</div>
+                    <button class="profile-button">프로필 확인 / 수정</button>
+                    <div>매칭 기능 활성화: <div class="toggle"></div>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 기업 추천 -->
+        <div class="card">
+            <div class="title">기업 추천</div>
+            <div class="recommend-card">
+                <div class="recommend-card-box">
+                    <img src="Screenshot_19.png" alt="기업1" />
+                    <div class="recommend-card-box-content">
+                        <div>풀스택 Django 백엔드 개발자</div>
+                        <div class="tagfont">미리비트</div>
+                        <div class="tagfont">서울 강남구∙경력 5년 이상</div>
+                        <a href="#" class="btn-detail">상세보기</a>
+                    </div>
+                </div>
+
+                <div class="recommend-card-box">
+                    <img src="Screenshot_19.png" alt="기업1" />
+                    <div class="recommend-card-box-content">
+                        <div>풀스택 Django 백엔드 개발자</div>
+                        <div class="tagfont">미리비트</div>
+                        <div class="tagfont">서울 강남구∙경력 5년 이상</div>
+                        <a href="#" class="btn-detail">상세보기</a>
+                    </div>
+                </div>
+
+
+                <div class="recommend-card-box">
+                    <img src="Screenshot_19.png" alt="기업1" />
+                    <div class="recommend-card-box-content">
+                        <div>풀스택 Django 백엔드 개발자</div>
+                        <div class="tagfont">미리비트</div>
+                        <div class="tagfont">서울 강남구∙경력 5년 이상</div>
+                        <a href="#" class="btn-detail">상세보기</a>
+                    </div>
+                </div>
+
+                <div class="recommend-card-box">
+                    <img src="Screenshot_19.png" alt="기업1" />
+                    <div class="recommend-card-box-content">
+                        <div>풀스택 Django 백엔드 개발자</div>
+                        <div class="tagfont">미리비트</div>
+                        <div class="tagfont">서울 강남구∙경력 5년 이상</div>
+                        <a href="#" class="btn-detail">상세보기</a>
+                    </div>
+                </div>
+
+                <div class="recommend-card-box">
+                    <img src="Screenshot_19.png" alt="기업1" />
+                    <div class="recommend-card-box-content">
+                        <div>풀스택 Django 백엔드 개발자</div>
+                        <div class="tagfont">미리비트</div>
+                        <div class="tagfont">서울 강남구∙경력 5년 이상</div>
+                        <a href="#" class="btn-detail">상세보기</a>
+                    </div>
+                </div>
+
+                <div class="recommend-card-box">
+                    <img src="Screenshot_19.png" alt="기업1" />
+                    <div class="recommend-card-box-content">
+                        <div>풀스택 Django 백엔드 개발자</div>
+                        <div class="tagfont">미리비트</div>
+                        <div class="tagfont">서울 강남구∙경력 5년 이상</div>
+                        <a href="#" class="btn-detail">상세보기</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
