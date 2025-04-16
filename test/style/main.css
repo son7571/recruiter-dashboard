@@ -1,0 +1,134 @@
+@charset "utf-8";
+@import "reset.css";
+
+header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+/* ✅ 헤더 스타일은 임시로 넣어놓은 것, 나중에 공통 css 넣고나면 삭제 예정 */
+
+main {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 44px 0;
+    gap: 46px;
+}
+
+.recommend,
+.news {
+    width: 100%;
+    gap: 24px;
+}
+
+.fs-4 {
+    font-weight: 600;
+}
+
+.card-wrap {
+    gap: 12.5px;
+}
+
+.card-1 {
+    width: calc(100%/5 - 10px);
+    gap: 8px;
+}
+
+.recommend-img {
+    height: 160px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.recommend-img img {
+    width: 100%;
+}
+
+.recommend-content {
+    gap: 18px;
+    border: 1px solid #c0c0c0;
+    padding: 12px 8px;
+}
+
+.fs-6 {
+    font-weight: 500;
+}
+
+.bottom {
+    gap: 12px;
+}
+
+.bottom p {
+    font-size: 14px;
+    color: #888;
+}
+
+.bottom ul {
+    gap: 16px;
+}
+
+.bottom li {
+    gap: 4px;
+}
+
+.bottom img {
+    width: 14px;
+    height: 14px;
+}
+
+ul.duty {
+    gap: 6px;
+}
+
+.duty li {
+    padding: 6px 8px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.duty p {
+    font-weight: 500;
+    color: #555;
+}
+
+.news .card-wrap {
+    width: 100%;
+    gap: 10px;
+}
+
+.card-2 {
+    width: 460px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news-img img {
+    width: 100%;
+}
+
+.cont-wrap {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 32px 28px;
+    gap: 16px;
+}
+
+.cont-wrap p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cont-wrap span {
+    font-size: 14px;
+}
